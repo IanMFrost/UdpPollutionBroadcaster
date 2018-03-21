@@ -13,13 +13,13 @@ namespace UdpSensorReceiver
         static void Main(string[] args)
         {
 
-            UdpClient udpSensor = new UdpClient(7000);
+            UdpClient udpSensor = new UdpClient(3333);
             
 
             //Creates an IPEndPoint to record the IP Address and port number of the sender.  
             IPEndPoint RemoteIpEndPoint = new IPEndPoint(IPAddress.Any,3333);
 
-
+            int sumtal = 0;
 
             while (true)
             {
